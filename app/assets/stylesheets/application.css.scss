@@ -13,3 +13,374 @@
  *= require_tree .
  */
 
+ * {
+ 	font-family: arial;
+ 	h1, h2, h3 {
+ 		font-family: 'Lato',/*'sans-serif',*/ 'arial' !important;
+ 	}
+ }
+
+.accent {
+	color: #4CAF50;
+	font-weight: 600;
+}
+.header {
+	width: 100%;
+	height: 700px;
+	position: relative;
+
+	img {
+		width: 100%;
+		position: absolute;
+		background-position: center;
+		background-repeat: no-repeat;
+		overflow: hidden;
+		height: 100%;
+	}
+
+	h1 {
+		font-weight: 900;
+		font-size: 57px;
+		color: white;
+	}
+
+	p {
+		font-weight: 900;
+		color: white;
+		font-size: 24px;
+		margin-top: 4%;
+		font-family: 'Lato', /*'sans-serif',*/ 'arial';
+	}
+
+	.header-caption {
+		margin-top: 15%;
+	}
+
+	.btn-header {
+		color: white;
+		background-color: #4CAF50;
+		margin-top: 7%;
+	    border-radius: 3px;
+	    font-size: 23px;
+	    font-family: 'Lato', 'sans-serif';
+	    font-weight: 400;
+		padding: 12px;
+
+	}
+
+	.overlay {
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		background-color: rgba(0, 0, 0, 0.3);
+
+	}
+
+}
+
+.info {
+	overflow: hidden;
+	width: 100%;
+	position: relative;
+	background-color: #FFFF;
+	
+	/* drop shadow on bottom border of section */
+
+	-webkit-box-shadow: 0 8px 6px -6px #999;
+	       -moz-box-shadow: 0 8px 6px -6px #999;
+	            box-shadow: 0 8px 6px -6px #999;
+	    border: transparent;
+
+	.info-header-text {
+		margin-top: 4%;
+		margin-bottom: 4%;
+	}
+
+	.red {
+		/*background-color: #4CAF50;
+		width: 210px;
+		height: 150px; */
+	}
+
+	.green {
+		/*background-color: #4CAF50;
+		width: 210px;
+		height: 150px;*/
+	}
+
+	.blue {
+		/*background-color: #4CAF50;
+		width: 210px;
+		height: 150px;*/
+	}
+
+	.squares {
+		margin-top: 3%;
+		/*margin-left: 11%;*/
+		margin-bottom: 4%;
+		 
+	}
+
+	.square {
+		/*margin-left: 6%;*/
+		margin-bottom: 3%;
+		border-radius: 4px;
+		border: transparent;
+	}
+
+	.youtube-vid {
+		border-radius: 4px;
+		border: transparent;
+	}
+
+	.eye-catcher {
+
+		background: url("/assets/fit_chick.png");
+		bottom: 0;
+		height: 500px;
+		position: absolute;
+		left: -170px;
+		width: 700px;
+		float: left; 
+		
+		/*background-color: #4CAF50;
+		height: 345px;
+		border-radius: 10px; */
+	}
+
+	.class-info {
+		float: right;
+		clear: left;
+	}
+
+
+	.eye-catching-info {
+		h1, h2, h3 {
+			margin-left: 10%;
+		}
+
+		h1 {
+			font-size: 40px;
+		}
+
+		h3 {
+			font-size: 25px;
+		}
+
+		margin-bottom: 7%;
+
+		margin-top: 4%;
+	}
+	
+	.classes-row {
+		margin-top: 3%;
+	}
+
+	.class-list {
+		list-style: none;
+		color: #3D4245;
+
+		li {
+			font-size: 12px;
+			margin-bottom: 5px;
+			padding: 1.5px;
+		}
+	}
+
+	.book-class-btn {
+		background-color: lightgray;
+		margin-left: 8%;
+		margin-top: 7%;
+		border-radius: 4px;
+		padding: 17px;
+		width: 200px;
+	}
+}
+
+
+.gallery {
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	/*background-color: lightgray;*/
+	background: url("/assets/pattern.png");
+	background-size: cover;
+
+	.gallery-header-text {
+		margin-top: 6%;
+		color: white;
+	}
+
+	.gallery-item1 {
+		width: 300px;
+		height: 170px;
+		/*background-color: #4CAF50;*/
+		background: url("/assets/yoga.jpg");
+		background-size: cover;
+		margin-top: 4%;
+		margin-left: 5%;
+		border-radius: 5px;
+	}
+
+	.gallery-item2 {
+		width: 300px;
+		height: 170px;
+		/*background-color: #4CAF50;*/
+		background: url("/assets/strength.jpg");
+		background-size: cover;
+		margin-top: 4%;
+		margin-left: 5%;
+		border-radius: 5px;
+	}
+
+	.gallery-item3 {
+		width: 300px;
+		height: 170px;
+		/*background-color: #4CAF50;*/
+		background: url("/assets/plyometrics.jpg");
+		background-size: cover;
+		margin-top: 4%;
+		margin-left: 5%;
+		border-radius: 5px;
+	}
+
+	.gallery-item4 {
+		width: 300px;
+		height: 170px;
+		/*background-color: #4CAF50;*/
+		background: url("/assets/kickboxing.jpg");
+		background-size: cover;
+		margin-top: 4%;
+		margin-left: 5%;
+		border-radius: 5px;
+	}
+
+	.gallery-item5 {
+		width: 300px;
+		height: 170px;
+		/*background-color: #4CAF50;*/
+		background: url("/assets/kettle-bell.jpg");
+		background-size: cover;
+		margin-top: 4%;
+		margin-left: 5%;
+		border-radius: 5px;
+	}
+
+	.gallery-item6 {
+		width: 300px;
+		height: 170px;
+		/*background-color: #4CAF50;*/
+		background: url("/assets/squash.jpg");
+		background-size: cover;
+		margin-top: 4%;
+		margin-left: 5%;
+		border-radius: 5px;
+	}
+
+
+
+	.gallery-container {
+		width: 700px;
+		margin-bottom: 5%;
+	}
+
+}
+
+.trainers {
+	height: 600px;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	/*background: url("/assets/trainer3.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;*/
+	
+	img {
+		width: 100%;
+		position: absolute;
+		background-position: center;
+		background-repeat: no-repeat;
+		overflow: hidden;
+		height: 100%;
+	}
+
+	.overlay2 {
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		background-color: rgba(76, 175, 80, 0.4);
+	}
+
+	h1 {
+		font-weight: 600;
+		color: white;
+	}
+
+	.trainer-text {
+		font-weight: 400;
+		color: white;
+	}
+
+}
+
+.values {
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	background-color: lightgray;
+
+	h1 {
+		font-family: 'Lato', 'sans-serif';
+		font-weight: 700;
+		font-size: 50px;
+	}
+
+	img {
+		height: 160px;
+		width: 160px;
+	}
+
+	.header-col {
+		margin-top: 3%;
+	}
+
+	.value {
+		margin-top: 3%;
+		margin-bottom: 4%;
+	}
+
+	h3 {
+		margin-top: 7%;
+		margin-bottom: 6%;
+		font-weight: 700;
+	}
+
+	p {
+		font-family: 'Lato', 'sans-serif';
+		font-weight: 400;
+		font-size: 17px;
+	}
+
+}
+
+
+/* some code for the navbar */
+.navbar {
+	padding: 13px;
+	background: transparent;
+	border: transparent;
+	li {
+		a {
+			font-family: 'Lato', 'sans-serif';
+			font-weight: 700;
+			font-size: 20px;
+		}
+	}
+}
+
+.navbar-brand {
+	   font-family: 'Lato', sans-serif;
+	   font-weight: 700;
+	   font-size: 40px;
+	}
