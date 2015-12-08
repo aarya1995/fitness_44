@@ -287,7 +287,7 @@
 }
 
 .trainers {
-	height: 600px;
+	
 	width: 100%;
 	overflow: hidden;
 	position: relative;
@@ -309,12 +309,24 @@
 		position: absolute;
 		height: 100%;
 		width: 100%;
-		background-color: rgba(76, 175, 80, 0.4);
+		background-color: rgba(0, 0, 0, 0.4);
+	}
+
+	.about-trainers {
+		margin-top: 4%;
+		margin-bottom: 4%;
 	}
 
 	h1 {
-		font-weight: 600;
+		font-weight: 700;
 		color: white;
+		font-size: 53px;
+	}
+
+	h3 {
+		color: white;
+		font-family: "Raleway" !important;
+		line-height: 170%;
 	}
 
 	.trainer-text {
@@ -383,4 +395,67 @@
 	   font-family: 'Lato', sans-serif;
 	   font-weight: 700;
 	   font-size: 40px;
+}
+
+#contact {
+	
+	a {
+	    color: #4CAF50;
+	    word-wrap: break-word;
+	    font-family: "Raleway";
+
+	    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+	    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+	    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+	    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+	    transition: color 0.1s ease-in, background 0.1s ease-in;
 	}
+
+	a:hover,
+	a:focus {
+	    color: #c0392b;
+	    text-decoration: none;
+	    outline: 0;
+	}
+
+	a:before,
+	a:after {
+	    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+	    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+	    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+	    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+	    transition: color 0.1s ease-in, background 0.1s ease-in;
+	}
+
+    #footerwrap {
+		background-color: #2f2f2f;
+		color: white;
+		padding-top: 40px;
+		padding-bottom: 60px;
+		text-align: left;
+	}
+
+	#footerwrap h3 {
+		font-size: 28px;
+		color: white;
+	}
+
+	#footerwrap p {
+		color: white;
+		font-size: 18px;
+	}
+
+	/* Copyright Wrap */
+
+	#c {
+		background: #222222;
+		padding-top: 15px;
+		text-align: right;
+	}
+
+	#c p {
+		color: white
+	}	
+
+}
+
