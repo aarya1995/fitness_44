@@ -12,14 +12,14 @@
 					<!--<h1>Time to Transform</h1>
 					<p>Fitness 44 gives you access to world class <br> trainers, who will transform your physique <br> through
 						a tailor made workout regimen and <br> nutrition plan</p> -->
-					<h1 class="tagline">LIVE A BETTER LIFE - RESULTS, COACHING &amp; COMMUNITY </h1>
+					<h1 class="tagline">DO YOU HAVE WINGS? THEN LET'S FLY </h1>
 					<btn class="btn btn-lg btn-header">Let's Get Started</div>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<section class="values">
+	<section class="values" id="what_we_do">
 		<div class="container">
 			<div class="row values">
 				<div class="col-md-12 header-col">
@@ -68,7 +68,7 @@
 
 			<hr>
 
-			<div class="row eye-catching-info">
+			<div class="row eye-catching-info" id="services">
 				<div class="col-md-5 eye-catcher hidden-xs">
 				</div>
 
@@ -174,30 +174,36 @@
 	</section>
 
 	<section id="contact" name="contact">
+		<div class="loading_gif"></div>
 		<div id="footerwrap">
 			<div class="container">
-				
-				<div class="col-lg-7">
+				<!-- start form here -->
+				<%= form_tag({controller: "static_pages", action: "send_message"}, remote: true, id: "simple_form") do %>
+				<div class="col-lg-7" id="basic_mailer">
+					<% if @error %>
+						<p><%= @error %></p>
+					<% end %>
 					<h3>Drop Us A Line</h3>
 					<br>
 					<form role="form" action="#" method="post" enctype="plain"> 
 					  <div class="form-group">
 					    <label for="name1">Your Name</label>
-					    <input type="name" name="Name" class="form-control" id="name1" placeholder="Your Name">
+					    <input type="name" name="Name" class="form-control" id="name1" placeholder="Your Name" required>
 					  </div>
 					  <div class="form-group">
 					    <label for="email1">Email address</label>
-					    <input type="email" name="Mail" class="form-control" id="email1" placeholder="Enter email">
+					    <input type="email" name="Mail" class="form-control" id="email1" placeholder="Enter email" required>
 					  </div>
 					  <div class="form-group">
 					  	<label>Your Text</label>
-					  	<textarea class="form-control" name="Message" rows="3"></textarea>
+					  	<textarea class="form-control" name="Message" rows="3" required></textarea>
 					  </div>
 					  <br>
-					  <button type="submit" class="btn btn-large btn-success">SUBMIT</button>
+					  <button type="submit" class="btn btn-large btn-success" id="mail_btn">SUBMIT</button>
 					</form>
 				</div>
-
+				<% end %>
+				<!-- end form here -->
 				<div class="col-lg-5">
 					
 				</div>
@@ -205,7 +211,7 @@
 		</div>
 		<div id="c">
 			<div class="container">
-				<p>© 2015 <a href="http://www.blacktie.co">FITNESS44, Inc.</a></p>
+				<p class="copyright">© 2015 <a href="#">FITNESS44, Inc.</a></p>
 			
 			</div>
 		</div>
@@ -214,6 +220,7 @@
 	<!-- javascript code -->
 
 	<script>
+		var i = 0;
 		$(document).ready(function(){       
 		   var scroll_start = 0;
 		   var startchange = $('#startchange');
@@ -246,5 +253,6 @@
 		       }
 		   });
 		});
+
 	</script>
 

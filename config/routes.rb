@@ -3,6 +3,7 @@ Fitness44::Application.routes.draw do
   # See how all your routes lay out with "rake routes".
   
   root 'static_pages#index'
+  post 'static_pages/send_message' => 'static_pages#send_message'
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
 
