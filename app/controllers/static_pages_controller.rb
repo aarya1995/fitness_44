@@ -10,7 +10,7 @@ class StaticPagesController < ApplicationController
 			if params[:Name] == "" || params[:Mail] == "" || params[:Message] == ""
 				@error= "One of the fields was left blank"
 			elsif
-			    name = params[:Name]
+			    name = params[:Name] 
 			    mail = params[:Mail]
 			    message = params[:Message]
 
