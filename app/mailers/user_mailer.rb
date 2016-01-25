@@ -5,6 +5,6 @@ class UserMailer < ActionMailer::Base
   	@name = name
   	@email = email
   	@text = text
-  	mail(to: 'abhas.aryaa@gmail.com', from: @email, subject: 'General Inquiry')
+  	mail(to: 'contactfitness44@gmail.com', from: @email, subject: 'General Inquiry')
   end
 end

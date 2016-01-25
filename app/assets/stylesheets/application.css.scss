@@ -84,10 +84,11 @@
 }
 
 .info {
+	color: #000000;
 	overflow: hidden;
 	width: 100%;
 	position: relative;
-	background-color: #FFFF;
+	background-color: #FFFFFF;
 	
 	/* drop shadow on bottom border of section */
 
@@ -99,24 +100,6 @@
 	.info-header-text {
 		margin-top: 4%;
 		margin-bottom: 4%;
-	}
-
-	.red {
-		/*background-color: #4CAF50;
-		width: 210px;
-		height: 150px; */
-	}
-
-	.green {
-		/*background-color: #4CAF50;
-		width: 210px;
-		height: 150px;*/
-	}
-
-	.blue {
-		/*background-color: #4CAF50;
-		width: 210px;
-		height: 150px;*/
 	}
 
 	.squares {
@@ -183,7 +166,7 @@
 
 	.class-list {
 		list-style: none;
-		color: #3D4245;
+		color: #000000;
 
 		li {
 			font-size: 12px;
@@ -193,13 +176,13 @@
 	}
 
 	.book-class-btn {
-		background-color: lightgray;
+		background-color: #4caf50;
 		margin-left: 8%;
 		margin-top: 7%;
 		border-radius: 4px;
 		padding: 17px;
 		width: 200px;
-		color: #333333;
+		color: #fff;
 		
 	}
 }
@@ -295,33 +278,41 @@
 
 .trainers {
 	
+	
 	width: 100%;
 	overflow: hidden;
 	position: relative;
+	background-color: #343434;
 	/*background: url("/assets/trainer3.png");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;*/
+	height: 630px;
+
 	
-	img {
-		width: 100%;
-		position: absolute;
+	.huwey {
+		background: url('/assets/huwey2.jpg');
 		background-position: center;
-		background-repeat: no-repeat;
-		overflow: hidden;
-		height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+		height: 630px;
 	}
 
-	.overlay2 {
+	.trainer-container {
+		
+	}
+
+
+	/*.overlay2 {
 		position: absolute;
 		height: 100%;
 		width: 100%;
 		background-color: rgba(0, 0, 0, 0.4);
-	}
+	}*/
 
 	.about-trainers {
-		margin-top: 4%;
-		margin-bottom: 4%;
+		
+		
 	}
 
 	h1 {
@@ -339,6 +330,10 @@
 	.trainer-text {
 		font-weight: 400;
 		color: white;
+	}
+
+	.text-trainer {
+
 	}
 
 }
